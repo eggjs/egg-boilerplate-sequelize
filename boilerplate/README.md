@@ -15,11 +15,11 @@ npx sequelize db:migrate
 # migrate up for test database
 NODE_ENV=test npx sequelize db:migrate
 # migrate down
-npx sequelize db:migrate:down
-npx sequelize db:migrate:down:all
+npx sequelize db:migrate:undo
+npx sequelize db:migrate:undo:all
 # migrate down for test database
-NODE_ENV=test npx sequelize db:migrate:down
-NODE_ENV=test npx sequelize db:migrate:down:all
+NODE_ENV=test npx sequelize db:migrate:undo
+NODE_ENV=test npx sequelize db:migrate:undo:all
 
 # run migration and test, for CI environment
 npm run ci
